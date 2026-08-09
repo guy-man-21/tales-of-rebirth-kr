@@ -1,4 +1,4 @@
-# ★게임 데이터는 절대 커밋하지 않는다 (원본/패치본 모두)
+# ★게임 데이터는 절대 커밋하지 않는다 (원본/패치본/폰트 컨테이너 모두)
 *.iso
 *.cso
 *.bin
@@ -6,13 +6,33 @@
 *.pss
 *.xdelta
 
+# ★번역 데이터도 이 저장소에는 올리지 않는다
+#   (jp 원문 스크립트가 통째로 들어 있어 공개 대상이 아니다)
+*.json
+*.xlsx
+*.xml
+*.jsonl
+translation/
+skits/
+
+# ★폰트 파일 - 재배포 금지 라이선스
+*.ttf
+*.otf
+
 # 배포물은 Releases 로 올린다 (100MB 초과 파일은 git 에 못 올림)
 dist/
+dist_iso/
 *.zip
 *.7z
+*.exe
 
 # 작업 부산물
+scratchpad/
+_archive/
+build/
 *.log
+*.bak
+*.pyc
 __pycache__/
 .DS_Store
 Thumbs.db

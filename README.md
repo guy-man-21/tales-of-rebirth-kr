@@ -1,4 +1,4 @@
-# Tales of Rebirth 한국어 패치
+﻿# Tales of Rebirth 한국어 패치
 
 PSP **Tales of Rebirth (일본판, ULJS00132)** 팬 한국어 번역 패치입니다.
 
@@ -58,6 +58,35 @@ PSP **Tales of Rebirth (일본판, ULJS00132)** 팬 한국어 번역 패치입�
 - 화면 스크린샷
 - 어느 마을 · 어느 상황이었는지
 - 크래시라면 직전에 무엇을 했는지
+
+## 개발
+
+패치를 만드는 데 쓴 도구 스크립트가 이 저장소에 함께 들어 있습니다.
+파일 배치는 작업 폴더 구조 그대로라, 작업 폴더에 덮어씌우면 바로 쓸 수 있습니다.
+
+```
+build_all_jp.py, build_dat_jp.py, repack_psp_dat.py, ...   씬/DAT/EBOOT 빌드
+work/speakers_jp/    씬 재빌드 (orddup, pin, 시스템 문자열 복원)
+work/eboot_jp/       EBOOT 텍스트 패치
+work/item_jp/        아이템명·설명
+work/skit_jp/        스킷
+work/menu_jp/        메뉴·UI (슬롯3960)
+work/battle_jp/      배틀 텍스트 (슬롯2), 배틀북
+work/synopsis_jp/    줄거리북
+work/title_img/      마을 타이틀 이미지 생성·주입
+work/edit/           통합 번역 편집기 (CLI · 웹 UI)
+```
+
+### 실행에 필요한 것
+
+- Python 3 + `openpyxl lxml Pillow numpy`
+- [Life Bottle Productions](https://github.com/lifebottle) 의 PythonLib (별도 설치)
+- 본인이 소유한 게임에서 추출한 원본 파일 (`DAT.BIN`, `BOOT.BIN` 등)
+- 인코딩 테이블과 폰트 빌드물
+
+**번역 데이터(대사 JSON, 엑셀)는 이 저장소에 포함되어 있지 않습니다.**
+게임 대본 원문이 그대로 들어 있기 때문입니다. 스크립트 안의 경로는 작업 PC 기준으로
+하드코딩되어 있으니, 다른 환경에서 쓰려면 경로를 바꿔야 합니다.
 
 ## 크레딧
 
