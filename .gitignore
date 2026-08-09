@@ -1,0 +1,18 @@
+# ★게임 데이터는 절대 커밋하지 않는다 (원본/패치본 모두)
+*.iso
+*.cso
+*.bin
+*.BIN
+*.pss
+*.xdelta
+
+# 배포물은 Releases 로 올린다 (100MB 초과 파일은 git 에 못 올림)
+dist/
+*.zip
+*.7z
+
+# 작업 부산물
+*.log
+__pycache__/
+.DS_Store
+Thumbs.db
