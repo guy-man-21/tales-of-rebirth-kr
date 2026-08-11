@@ -94,6 +94,7 @@ work/edit/           통합 번역 편집기 (CLI · 웹 UI)
 - [Life Bottle Productions](https://github.com/lifebottle) 의 Tales of Rebirth 툴킷
 - [xdelta](https://github.com/jmacd/xdelta) (Joshua MacDonald)
 - PPSSPP — 분석 및 검증
+- Claude (Anthropic) — 리소스 분석, 도구 작성, 번역 작업 보조
 
 ### 폰트
 
@@ -106,3 +107,4 @@ work/edit/           통합 번역 편집기 (CLI · 웹 UI)
 ---
 
 이 패치는 비영리 팬 번역이며, 어떤 형태로도 판매할 수 없습니다.
+
